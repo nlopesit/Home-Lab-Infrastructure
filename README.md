@@ -17,5 +17,10 @@ I deployed a responsive portfolio website using an **Nginx** Docker container.
 * **Key Feature:** Utilized **Bind Mounts** to map host directories to the container, allowing for real-time content updates without service interruption.
 * **Security:** Implemented Read-Only (`:ro`) volume permissions to follow the Principle of Least Privilege.
 
+### 📸 Project: AI-Powered Private Photo Cloud (PhotoPrism)
+* **Goal:** Create a secure, self-hosted alternative to Google Photos for family and project photography.
+* **Implementation:** Deployed PhotoPrism using Docker with AI-indexing enabled via TensorFlow.
+* **Storage Logic:** Configured persistent bind mounts on a Proxmox host to ensure data durability across container lifecycles.
+* **Skills Demonstrated:** AI integration, Linux directory permissions, and database management.
 ---
 *Currently studying for CompTIA A+ | Berkley, MA*
