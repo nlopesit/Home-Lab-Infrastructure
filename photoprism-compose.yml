@@ -1,0 +1,15 @@
+ersion: '3'
+services:
+  photoprism:
+    image: photoprism/photoprism:latest
+    container_name: photoprism
+    ports:
+      - "8082:2342" # Access your gallery on port 8082
+    environment:
+      PHOTOPRISM_ADMIN_PASSWORD: "Nelson2011!" # Change this!
+      PHOTOPRISM_SITE_URL: "http://192.168.1.51:8082/"
+      PHOTOPRISM_AUTH_MODE: "password"
+    volumes:
+      - "/home/photoprism/photos:/photoprism/originals"
+      - "/home/photoprism/storage:/photoprism/storage"
+    restart: always
